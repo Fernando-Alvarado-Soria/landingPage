@@ -1,0 +1,55 @@
+
+/* Misión */
+
+.contenedor_mision{
+font-size: 15px;
+max-width: 700px;
+padding: 60px 25px 50px 20px;
+margin: 0 auto;
+background-color: #f4f4f4;
+}
+
+.text_mision h1{
+text-align: center;
+font-size: 35px;
+}
+.text_mision p{
+text-align: justify;
+}
+
+.img_mision{
+text-align: center;
+}
+
+.img_mision img{
+padding-top: 10px;
+padding-bottom: 20px;
+width: 100%;
+max-width: 500px;
+}
+
+@media (min-width: 950px){
+.contenedor_mision{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+}
+.text_mision{
+  width: 100%;
+}
+.text_mision p{
+  text-align: justify;
+  margin: 0px 20px 0px 20px;
+}
+
+.img_mision{
+  width: 700px;
+}
+
+.img_mision img{
+  width: 100%;
+  max-width: 700px;
+   border-radius: 10%;
+}
+}

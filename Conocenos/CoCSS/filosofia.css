@@ -1,0 +1,56 @@
+.filosofia {
+    width: 100%;
+}
+.filosofia_body {
+    font-size: 15px;
+    max-width: 700px;
+    padding: 60px 25px 50px 20px;
+    margin: 0 auto;
+
+}
+.filosofia_titulo {
+    font-size: 35px;
+    margin: 0;
+    text-align: center;
+}
+.filosofias {
+    text-align: center;
+}
+.filosofias p{
+    text-align: justify;
+}
+.img_filos {
+    width: 80%;
+    max-width: 700px;
+    border-radius: 10%;
+    margin: 0;
+    padding: 0;
+}
+/*version para computadoras*/
+@media (min-width: 950px) {
+    .filosofia_body {
+        font-size: 15px;
+        max-width: 1200px;
+        padding: 60px 25px 50px 25px;
+        margin: 0 auto;
+    
+    }
+    .filosofia_titulo {
+        font-size: 60px;
+        margin: 0;
+        text-align: center;
+    }
+    .filosofias {
+        text-align: center;
+    }
+    .filosofias p{
+        text-align: justify;
+    }
+    .img_filos {
+        width: 80%;
+        max-width: 700px;
+        border-radius: 10%;
+        margin: 0;
+        padding: 0;
+    }
+}    

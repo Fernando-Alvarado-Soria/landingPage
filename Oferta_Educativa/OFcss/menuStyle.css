@@ -1,0 +1,228 @@
+/* Estilos generales */
+body {
+  font-family: "poppins";
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+section[id] {
+scroll-margin-top: 70px;
+}
+
+.container_menu {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Estilos del encabezado y menú */
+#header {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.5s;
+}
+
+.navbar {
+  background-color: transparent;
+  display: flex;  
+  align-items: center;
+  padding: 15px 0;
+  
+}
+
+.navbar.scrolled {
+  background-color: #18988bff;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-align: right;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu li a:hover {
+  color: #ddd;
+}
+
+.open-menu,
+.close-menu,
+.logo {
+  display: none;
+}
+
+.logotype {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+
+/* Estilos para el pie de página */
+.pie-de-pagina {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.pie-de-pagina-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.datos-contacto {
+  flex: 1;
+}
+
+.mapa-style {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.mapa-embed {
+  position: relative;
+  overflow: hidden;
+  /* Cambia el valor para ajustar el tamaño del mapa */
+  padding-top: 50%; /* Aspect ratio 2:1 */
+  max-width: 300px; /* Ajusta el ancho máximo del mapa */
+  margin: 0 auto;
+}
+
+.mapa-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+/*Version mobile menu*/
+@media (max-width: 950px) {
+  #header {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      padding: 0;
+    }
+    
+    /* Logo */
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    
+     
+    .navbar {
+      background-color: transparent;
+      padding: 12px 10px;
+      
+    }
+    
+    .open-menu {
+      order: 1; /* Mueve el botón de menú a la izquierda */
+    }
+    
+    
+    /* Menu */
+    .menu {
+      flex-direction: column;
+      position: fixed;
+      left: 0;
+      top: 0;
+      /*esto es para el menu abierto el color para cerrarlo este hasta la parte superior*/
+      padding: 0px 0px;
+      width: 100%;
+      align-items: center;
+      background-color: #18988bff;
+      height: 100%;
+      overflow-y: auto;
+  
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+    }
+  
+    .menu li {
+      padding: 0;
+    }
+  
+    .menu a {
+      color: var(--text-color-inverse);
+      line-height: 60px;
+      font-size: 15;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  
+    .menu a:hover {
+      color: #ddd;
+    }
+    
+  
+    .open-menu,
+    .close-menu {
+      display: block;
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+  
+    .close-menu {
+      align-self: flex-end;
+      padding:  20px 15px 20px 15px;
+      background-color:  rgb(171, 240, 233);
+      width: 100%;
+      text-align: right;
+      margin: inherit;
+    }
+  
+    .menu_opened {
+      opacity: 1;
+      pointer-events: all;
+      margin-top: 0px;
+    }
+  
+    .open-menu:focus:not(:focus-visible),
+    .close-menu:focus:not(:focus-visible) {
+      outline: none;
+    }
+  /*mobile footer*/  
+  .pie-de-pagina {
+      padding: 10px 10px;
+  }  
+}   

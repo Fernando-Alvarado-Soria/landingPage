@@ -1,0 +1,32 @@
+/*Moviles*/
+
+.portada{
+    /*alineando todos los elementos de la seccion al centro*/
+    padding-top: 60px;
+    text-align: center;
+    /*color que tendra toda la seccion*/
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6) )  ,url('/Oferta_Educativa/OFimgs/software/fondo_mo.svg');    
+    color: white;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    }
+
+/*Compus*/
+
+@media (min-width: 950px){
+    .portada{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6) )  ,url('/Oferta_Educativa/OFimgs/software/fondo_co.svg');
+        padding-bottom: 20px;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+}

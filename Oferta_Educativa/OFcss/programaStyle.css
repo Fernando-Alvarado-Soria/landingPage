@@ -1,0 +1,28 @@
+
+.contenedor_programa{
+  font-size: 15px;
+  max-width: 2500px;
+  padding: 60px 25px 50px 20px;
+  margin: 0  auto;
+}
+
+.contenedor_programa{
+  background-color: #18988bff;
+}
+
+.text_programa h1{
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.img_programa{
+  text-align: center;
+}
+
+.img_programa img{
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+}

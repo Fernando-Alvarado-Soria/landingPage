@@ -1,0 +1,69 @@
+/* Estilos de la sección de la portada */
+.hero {
+    background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5) )  ,url('/Convocatorias/Recursos/Fondo_Convocatorias.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 5px black;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-shadow: 0px 0px 5px black;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #18988bff;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #156875ff; /* Cambio de color al pasar el mouse */
+}
+/*version mobile*/
+@media (max-width: 950px) {
+    .hero {
+        background-image: url(/Convocatorias/Recursos/Fondo_movil_convocatorias.webp);
+    }
+    .hero h1 {
+        font-size: 10px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    .hero p {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    .btn {
+        display: inline-block;
+        background-color: #18988bff;
+        color: #fff;
+        padding: 10px 10px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+    
+}   

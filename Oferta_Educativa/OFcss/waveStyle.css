@@ -1,0 +1,22 @@
+/* Wave */
+
+.spacer{
+    aspect-ratio: 960/200;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .layer1{
+    background-image: url('../OFimgs/waveperrona.svg');
+  }
+  
+  .layer2{
+    background-image:url("../OFimgs/waveperrona2.svg");
+  }
+  
+  .layer3{
+    background-image:url("../OFimgs/waveperrona3.svg");
+
+  }

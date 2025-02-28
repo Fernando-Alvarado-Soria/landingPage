@@ -1,0 +1,89 @@
+/* Estilos del carrusel de noticias */
+.noticias {
+    background-color: white;
+    padding: 30px 25px;
+    margin: 0 auto;
+}
+
+.noticias h2 {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.noticias-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding: 20px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#noticias .container {
+    padding: 0 150px;
+    
+}
+
+.noticia {
+    /* Tamaño específico del slider */
+    /* Ajusta el valor de "flex-basis" según tus necesidades */
+    flex: 0 0 calc(33.33% - 20px); /* Esto determina el tamaño */
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    scroll-snap-align: start;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.noticia-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Espacio entre título/descripción e imagen */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.noticia img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin-top: auto; /* Empuja la imagen hacia la parte inferior */
+    margin-bottom: 10px;
+}
+
+/*Version mobile*/
+@media (max-width: 950px) {
+    #noticias .container {
+        padding: 0 25px;
+        
+    }
+
+    .noticia {
+        /* Tamaño específico del slider */
+        /* Ajusta el valor de "flex-basis" según tus necesidades */
+        flex: 0 0 calc(80% - 20px); /* Esto determina el tamaño */
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        scroll-snap-align: start;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra los elementos horizontalmente */
+        padding: 30px 25px;
+        
+    }
+
+    .noticias h2{
+        font-size: 35px;
+    }
+    .noticias-slider {
+        height: 300px;
+    }
+    
+}    

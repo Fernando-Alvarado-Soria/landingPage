@@ -1,0 +1,169 @@
+.convocatorias_alumnos {
+    background-color: #f4f4f4;
+}
+
+.contenedor_alum{
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+}
+.box{
+    margin-top: 10px;
+    margin: 0 30px;
+    position: relative;
+  }
+.titulo_alumnos {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.p_blanco {
+ color:#f4f4f4;
+}
+  
+.plan h1{
+    font-size: 25px;
+}
+  
+/* Figuras de cada  */
+
+.box h2{
+    font-size: 20px;
+}
+  
+.box::before{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 120%;
+    background: #18988bff;
+    left: -15px;
+    top: 10px;
+}
+  
+.box::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #18988bff;
+    left: -23px;
+    top: 6px;
+}
+
+.himno_body {
+    display: none;
+}
+
+.infoconv{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.imginfo{
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+/*Version computadoras*/
+@media (min-width: 950px){
+    .contenedor_alum {
+        display: none;
+    }
+    .titulo_alumnos{
+        display: none;
+    }
+    .himno_body {
+        display: block  ;
+    }
+    .himno{
+        display: flex;
+        flex-direction:column;
+        /*padding: 25px 0px 25px 0px;*/
+        max-width: 100%;
+        margin: 0 auto;
+        /*padding: 30px 0 0 0 ;*/
+       /* text-align: center;*/
+       padding: 20px 0;
+    
+    }
+    
+    
+    .himno_body {
+        background-color: #f4f4f4;
+        color: black;
+        padding: 0px 25px 0px 25px;
+        /*margin: 0 auto;*/
+        
+        
+    }
+    /*esto es para centrar los elementos deacuerdo al container (version pa tablets)*/
+    .himnos {
+        /*padding: 25px;*/
+        text-align: center;
+        max-width: 600px;
+        /*margin: 0 auto;*/
+    }
+    
+    .him_text{
+        text-align: justify;
+        font-size: 15px;
+        max-width: 400px;
+    }
+     /*titulo de la seccion*/
+     .himno_titulo {
+        text-align: center;
+        font-weight: bold;
+        font-size: 60px;
+        margin: 0 auto;;
+        max-width: 600px;
+        padding: 30px 0px 30px 0px;
+    }
+    
+    .him_titulo{
+        text-align: center;
+        max-width: 500px;
+    
+    }
+    /*esto es para reconocer como un grid y poder modificarlo*/
+    .himno_grid {
+        display: grid;
+        /*poner las secciones que queramos en el grid*/
+        grid-template-columns: auto 2px auto;
+        /*padding: 0px -30px 0 -30px;*/
+        justify-content: center;
+        grid-gap: 0px 100px;
+
+    }
+
+    /**/
+    /*Esto es para poner la linea entre los elementos y decoraciones con circulos para que se vea mejor*/
+    .line {
+        background-color: #18988bff;
+        width: 3px;
+        
+    }
+
+    .line::before,
+    .line::after {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-color: #18988bff;
+        border-radius: 50%;
+        margin: -20px 0px -20px -9px;
+
+    }   
+    
+
+}    

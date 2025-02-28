@@ -1,0 +1,108 @@
+.mision_vision{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    
+}
+
+.misionvision_body {
+    padding: 0px 25px;   
+}
+
+.misionvision_body {
+    background-color:  #18988bff;
+    color: white;
+    
+    
+}
+.mision {
+    text-align: center;
+    margin: 0 auto; 
+}
+
+.vision {
+    text-align: center;
+    margin: 0 auto; 
+}
+
+.misionvision_titulo {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 50px; /* Espacio bajo el título */
+    max-width: 500px;
+}
+
+.misionvision_grid {
+    text-align: justify;
+    margin: 0 auto;
+}
+
+
+.misionvision_titulo {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.titulo_mivi{
+    text-align: center;
+}
+
+.info_mivi {
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.imagen_mivi {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.img_mivi {
+    width: 80%;
+    max-width: 700px;
+    border-radius: 10%;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.wawe_2 {
+    top: 2px;
+}
+
+.wave_bottom_2 {
+    transform: scaleY(-1);
+    top: -2px;
+    z-index: -1;
+}
+/*version para computadoras*/
+@media (min-width: 950px) {
+    .misionvision_grid {
+        display: flex;
+    }
+    .misionvision_body {
+        padding: 0px 50px;   
+    }
+    .info_mivi {
+        max-width: 400px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .img_mivi {
+        width: 80%;
+        max-width: 500px;
+        border-radius: 10%;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .misionvision_titulo {
+        font-size: 60px;
+        font-weight: bold;
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto;
+    }    
+}    

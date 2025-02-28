@@ -1,0 +1,102 @@
+/* Estilos del carrusel de noticias */
+.noticias {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+.noticias h2 {
+    text-align: center;
+    font-size: 33px;
+    margin-bottom: 20px;
+}
+
+.noticias-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding: 20px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#noticias .container {
+    padding: 0 150px;
+    
+}
+
+.noticia {
+    /* Tamaño específico del slider */
+    /* Ajusta el valor de "flex-basis" según tus necesidades */
+    flex: 0 0 calc(33.33% - 20px); /* Esto determina el tamaño */
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    scroll-snap-align: start;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.noticia-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Espacio entre título/descripción e imagen */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.noticia img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+ 
+    margin-bottom: 10px;
+}
+
+.noticia h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center; /* Centra el título */
+}
+
+.noticia p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center; /* Centra la descripción */
+}
+
+.btn-vermas {
+    background-color: #18988bff;
+    color: #fff;
+    padding: 10px 20px; /* Ajusta el padding del botón */
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-vermas:hover {
+    background-color: #156875ff; /* Cambio de color al pasar el mouse */
+}
+/*Version mobile*/
+@media (max-width: 950px) {
+    #noticias .container {
+        padding: 0 25px;
+        
+    }
+
+    .noticia {
+        /* Tamaño específico del slider */
+        /* Ajusta el valor de "flex-basis" según tus necesidades */
+        flex: 0 0 calc(80% - 20px); /* Esto determina el tamaño */
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        scroll-snap-align: start;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+}    

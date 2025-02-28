@@ -1,0 +1,84 @@
+/*Seccion Conocenos*/
+
+h3 {
+    text-align: center;
+    font-size: 33px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+.conocenos{
+    padding: 0 25px;
+    background-color: white;
+}
+
+.Contenedor-conocenos {
+    display: flex;
+    align-items: center; /* Alinea la imagen en la parte inferior */
+    padding: 0px 70px 0; /* Agrega relleno alrededor del contenedor para crear espacio */
+}
+
+.Parrafos-y-boton-conocenos {
+    width: 54%;
+    font-size: 17px;
+    text-align: center;
+    flex: 1; /* Expande este div para ocupar el espacio restante */
+}
+
+.Parrafos-y-boton-conocenos p {
+    text-align: justify;
+    margin-bottom: 10px; /* Ajusta la cantidad de margen inferior para separar los párrafos */
+}
+
+.Parrafos-y-boton-conocenos .boton {
+    margin-top: 20px !important; /* Asegura que el margen superior se aplique al botón */
+    display: inline-block;
+}
+
+.imagen-conocenos {
+    max-height: 100%; /* Asegura que la imagen no sea más alta que el párrafo */
+    margin-right: 80px; /* Agrega margen a la derecha de la imagen */
+    margin-bottom: 50px; /* Agrega margen inferior a la imagen para separarla del texto */
+}
+
+.imagen-conocenos_1 {
+    display: none;
+}
+
+.boton {
+    background-color: #18988bff;
+    color: #fff;
+    padding: 10px 20px; /* Ajusta el padding del botón */
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.boton:hover {
+    background-color: #156875ff; /* Cambio de color al pasar el mouse */
+}
+
+/*version mobile*/
+@media (max-width: 950px) {
+    .Contenedor-conocenos { /* Alinea la imagen en la parte inferior */
+        padding: 0 25px; /* Agrega relleno alrededor del contenedor para crear espacio */
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .conocenos {
+        text-align: center;
+        align-items: center;
+    }
+    
+    .imagen-conocenos {
+        display: none;
+    }
+    .imagen-conocenos_1 {
+        display: block;
+        max-width: 200px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+}    

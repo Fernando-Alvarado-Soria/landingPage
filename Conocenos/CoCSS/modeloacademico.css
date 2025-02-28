@@ -1,0 +1,54 @@
+.modelo_academico {
+    text-align: center;
+    /*padding: 60px 0px 0px 0px;*/
+    width: 100%;
+}
+
+.modeloacademico_body {
+    font-size: 15px;
+    max-width: 700px;
+    padding: 0px 25px 0px 25px;
+    margin: 0 auto;
+    font-family: "poppins";
+}
+
+.modeloacademico_titulo{
+    font-size: 35px;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.modelo {
+    text-align: justify;
+    margin: 0 auto;
+}
+
+.modelo_titulo,
+.modelo_tex {
+    text-align: justify;
+    
+}
+.img_model_1 {
+    width: 80%;
+    max-width: 700px;
+    border-radius: 10%;
+}
+/*Version computadoras*/
+@media (min-width: 950px) {
+    .modeloacademico_body {
+        font-size: 15px;
+        max-width: 1200px;
+        padding: 0 100px;
+        margin: 0 auto;
+        font-family: "poppins";
+    }
+    .modeloacademico_titulo{
+        font-size: 60px;
+        margin: 0;
+        text-align: center;
+        font-weight: bold;
+    }
+
+
+}    

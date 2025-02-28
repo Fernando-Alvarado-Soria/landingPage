@@ -1,0 +1,158 @@
+/*esto es para acomodar el wave*/
+.himno{
+    display: flex;
+    flex-direction:column;
+    /*padding: 25px 0px 25px 0px;*/
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+
+    /*padding: 30px 0 0 0 ;*/
+   /* text-align: center;*/
+   
+
+}
+
+.himno_body {
+    background-color: #18988bff;
+    color: white;
+    padding: 0px 25px 0px 25px;
+    /*margin: 0 auto;*/   
+}
+/*esto es para centrar los elementos deacuerdo al container (version pa tablets)*/
+.himnos {
+    /*padding: 25px;*/
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.him_text{
+    text-align: justify;
+    font-size: 15px;
+    max-width: 500px;
+}
+
+
+/*efecto de ola parte superior*/
+.wave {
+    width: 100%;
+    position: relative;
+    top: 2px;
+    /*por si hay algo encima que tape alguna seccion*/
+    z-index: -1;
+}
+/*efecto ola parte inferior*/
+.wave_bottom {
+    transform: scaleY(-1);
+    top: -2px;
+}
+/*titulo de la seccion*/
+.himno_titulo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    margin: 0 auto;;
+    max-width: 600px;
+    padding: 0px 0px 25px 0px;
+}
+
+.him_titulo{
+    text-align: center;
+    max-width: 500px;
+
+}
+/*version computadora*/
+@media (min-width: 950px) {
+    .himno{
+        display: flex;
+        flex-direction:column;
+        /*padding: 25px 0px 25px 0px;*/
+        max-width: 100%;
+        margin: 0 auto;
+        /*padding: 30px 0 0 0 ;*/
+       /* text-align: center;*/
+       padding: 20px 0;
+    
+    }
+    
+    .himno_body {
+        background-color: #18988bff;
+        color: white;
+        padding: 0px 25px 0px 25px;
+        /*margin: 0 auto;*/
+        
+        
+    }
+    /*esto es para centrar los elementos deacuerdo al container (version pa tablets)*/
+    .himnos {
+        /*padding: 25px;*/
+        text-align: center;
+        max-width: 600px;
+        /*margin: 0 auto;*/
+    }
+    
+    .him_text{
+        text-align: justify;
+        font-size: 15px;
+        max-width: 400px;
+    }
+    
+    
+    /*efecto de ola parte superior*/
+    .wave {
+        width: 100%;
+        position: relative;
+        top: 2px;
+        /*por si hay algo encima que tape alguna seccion*/
+        z-index: -1;
+    }
+    /*efecto ola parte inferior*/
+    .wave_bottom {
+        transform: scaleY(-1);
+        top: -2px;
+    }
+    /*titulo de la seccion*/
+    .himno_titulo {
+        text-align: center;
+        font-weight: bold;
+        font-size: 60px;
+        margin: 0 auto;;
+        max-width: 600px;
+        padding: 0px 0px 25px 0px;
+    }
+    
+    .him_titulo{
+        text-align: center;
+        max-width: 500px;
+    
+    }
+    /*esto es para reconocer como un grid y poder modificarlo*/
+    .himno_grid {
+        display: grid;
+        /*poner las secciones que queramos en el grid*/
+        grid-template-columns: auto 2px auto;
+        /*padding: 0px -30px 0 -30px;*/
+        justify-content: center;
+        grid-gap: 0px 100px;
+
+    }
+
+    /**/
+    /*Esto es para poner la linea entre los elementos y decoraciones con circulos para que se vea mejor*/
+    .line {
+        background-color: white;
+        
+    }
+
+    .line::before,
+    .line::after {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        border-radius: 50%;
+        margin: -20px 0px -20px -10px;
+
+    }   
+}

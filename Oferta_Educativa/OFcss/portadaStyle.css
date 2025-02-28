@@ -1,0 +1,59 @@
+/* Estilos generales */
+body {
+  font-family: "poppins";
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* PORTADA */
+
+.contenedor_portada {
+padding: 20px 25px;
+height: 100%;
+align-items: center;
+
+}
+
+.text_portada{
+/*separacion de la imagen del texto*/
+margin-bottom: 40px;
+}
+
+.text_portada h1{
+font-size: 40px;
+}
+
+.image_portada img{
+width: 80%;
+max-width: 300px;
+}
+
+@media (min-width: 950px){
+
+.contenedor_portada{
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text_portada{
+  width: 600px;
+}
+
+.text_portada h1{
+  font-size: 78px;
+  text-align: center;
+}
+
+.text_portada p{
+  font-size: 16px;
+  text-align: center;
+}
+}
+
+
+

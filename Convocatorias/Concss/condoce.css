@@ -1,0 +1,55 @@
+
+.container_docente {
+    padding: 10px 100px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .images {
+    display: flex;
+  }
+
+  .titulo_docente {
+    text-align: center;
+    font-size: 45px;
+  }
+
+  .container p{
+    text-align: justify;
+  }
+  .download-section {
+    display: flex;
+  }
+  /*Estilos a la imagen y parrados*/
+  .download-section img {
+    width: 200px; /* Ajusta el tamaño de la imagen según lo necesites */
+    cursor: pointer;
+    text-align: center;
+  }
+  .cantainer_imgs {
+    width: 50%;
+    text-align: center;
+  }
+  
+  .cantainer_imgs img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .cantainer_imgs p {
+    margin: 0;
+    color: black;
+    text-align: center;
+  }
+  /*Version para celulares*/
+  @media (max-width: 950px) {
+    .container_docente {
+        padding: 10px 25px;
+      }
+      .titulo_docente {
+        text-align: center;
+        font-size: 25px;
+      }
+      
+  }   
