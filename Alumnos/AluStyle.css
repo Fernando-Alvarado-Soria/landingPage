@@ -1,0 +1,122 @@
+/* Estilos generales */
+body {
+    font-family: "poppins";
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+/* Estilos de la sección de horarios */
+.horarios {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.carrera {
+    list-style-type: none;
+    padding: 0;
+}
+
+.carrera-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    cursor: pointer; /* Hace que el elemento sea interactivo */
+    position: relative; /* Para permitir un área de clic más grande */
+}
+
+.carrera-item::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+}
+
+
+.carrera h3 {
+    margin: 0;
+}
+
+.generaciones {
+    list-style-type: none;
+    padding: 0;
+    display: none; /* Inicialmente ocultar la lista */
+}
+
+.generaciones li {
+    margin: 5px 0;
+}
+
+/**/
+/* Estilos para el pie de página */
+.pie-de-pagina {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.pie-de-pagina-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.datos-contacto {
+    flex: 1;
+}
+
+.mapa-style {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.mapa-embed {
+    position: relative;
+    overflow: hidden;
+    /* Cambia el valor para ajustar el tamaño del mapa */
+    padding-top: 50%; /* Aspect ratio 2:1 */
+    max-width: 300px; /* Ajusta el ancho máximo del mapa */
+}
+
+.mapa-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Estilos de la burbuja de WhatsApp */
+.whatsapp-burbuja {
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #25D366;
+    border-radius: 50%;
+    padding: 13px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.whatsapp-burbuja img {
+    width: 44px;
+    height: 44px;
+    display: block;
+}
+
+.whatsapp-burbuja:hover {
+    transform: scale(1.05);
+}
+  
