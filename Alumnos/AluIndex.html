@@ -45,8 +45,76 @@
     <!-- Portada -->
     <section id="inicio" class="hero"> <!-- Aquí va la imagen de la portada -->
         <div class="container_">
-            <h1>Unete a la comunidad UPLC</h1>
-            <p>Si quieres ser parte de nuestra comunidad necesitas de los siguientes requisitos</p>
+            <h1>Bienvenido a la comunidad estudiantil UPLC</h1>
+            <p>¡Descubre las carreas, horarios y plan de estudios de nuestra comunidad!</p>
         </div>
-    </section>  
+    </section>
+    <!-- seccion mostrar horarios -->
+    <section id="horarios">
+        <div class="horarios">
+            <h2>Horario de clases</h2>
+            <div class="carrera">
+                <label for="carrera">Carrera:</label>
+                <select id="carrera">
+                    <option value="IngSoftware">Ingeniería en Software</option>
+                    <option value="IngMecatronica">Ingeniería en Mecatronica</option>
+                    <option value="IngLogistica">Ingeniería en Logistica</option>
+                    <option value="IngAmbiental">Ingeniería en Ambiental</option>
+                </select>
+            </div>
+            <div class="grado">
+                <label for="grado">Grado:</label>
+                <select id="grado">
+                    <option value="1ro">1ro</option>
+                    <option value="4to">4to</option>
+                    <option value="7mo">7mo</option>
+                    <option value="10mo">10mo</option>
+                </select>
+            </div>
+            
+            <div class="botones">
+                <button id="ver" class="btn">Ver</button>
+                <button id="ocultar" class="btn">Ocultar</button>
+            </div>
+            <br>
+            <img src="" alt="Horario de clases" class="imghorarios" style="display: none;">
+            
+        </div>
+    </section>
+        <!-- numero de whatsapp -->
+        <div class="whatsapp-burbuja">
+            <a href="https://api.whatsapp.com/send?phone=7531306154" target="_blank">
+                <!-- aqui se escribe el numero de whatsapp -->
+                <img src="/Recursos/Imagenes/Iconos/WhatsApp.svg.webp" alt="WhatsApp">
+            </a>
+        </div>
+    
+        <script src="https://unpkg.com/image-loader"></script>
+        <script src="Aluscript.js"></script>
+</body>
+    
+    <!-- Pie de pagina -->
+    <footer class="pie-de-pagina">
+        <div class="container pie-de-pagina-container">
+    
+            <div class="datos-contacto">
+                <h4>Contacto</h4>
+                <p>UNIVERSIDAD POLITÉCNICA DE LÁZARO CÁRDENAS</p>
+                <p>Dirección: CARRETERA LA ORILLA LA MIRA KM 1 56</p>
+                <p>Colonia: LA ORILLA</p>
+                <p>C.P.: 60998</p>
+                <p>Teléfono: 753 5322716</p>
+                <p>E-mail: informacion@uplc.edu.mx</p>
+            </div>
+    
+            <div class="mapa-style">
+                <div class="mapa-embed">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4712.172049326942!2d-102.24249895514048!3d18.004154963504615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84315cf37583f259%3A0xa3418d0519d8a040!2sUniversidad%20Polit%C3%A9cnica%20De%20L%C3%A1zaro%20Cardenas!5e0!3m2!1ses!2smx!4v1691055259393!5m2!1ses!2smx"
+                        frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
 </html>

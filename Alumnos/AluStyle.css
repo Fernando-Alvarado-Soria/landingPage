@@ -6,52 +6,137 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Estilos de la sección de la portada */
+.hero {
+    background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5) )  ,url('/Convocatorias/Recursos/Fondo_Convocatorias.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 10px black;
+  }
+  
+  .hero p {
+    font-size: 25px;
+    margin-bottom: 30px;
+    text-shadow: 0px 0px 10px black;
+    text-align: center;
+  }
+
 
 /* Estilos de la sección de horarios */
 .horarios {
     background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    width: 90%;
+    max-width: 1200px; /* Se expande pero con un límite */
+    margin: 40px auto;
+    text-align: center;
 }
 
-.carrera {
-    list-style-type: none;
-    padding: 0;
+/* Título */
+.horarios h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-.carrera-item {
-    border: 1px solid #ccc;
-    border-radius: 5px;
+/* Contenedores de selección */
+.carrera, .grado {
+    margin-bottom: 15px;
+}
+
+/* Etiquetas */
+.carrera label, .grado label {
+    font-weight: bold;
+    color: #444;
+    font-size: 18px;
+}
+
+/* Menús desplegables */
+.carrera select, .grado select {
+    border: none;
+    background-color: #f0f0f0;
     padding: 10px;
-    margin: 10px 0;
-    background-color: #f9f9f9;
-    cursor: pointer; /* Hace que el elemento sea interactivo */
-    position: relative; /* Para permitir un área de clic más grande */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    font-size: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.carrera-item::before {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
+.carrera select:hover, .grado select:hover {
+    background-color: #e0e0e0;
 }
 
-
-.carrera h3 {
-    margin: 0;
+/* Botones */
+.botones {
+    margin-top: 15px;
 }
 
-.generaciones {
-    list-style-type: none;
-    padding: 0;
-    display: none; /* Inicialmente ocultar la lista */
+.btn {
+    display: inline-block;
+    background-color: #18988b;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 18px;
 }
 
-.generaciones li {
-    margin: 5px 0;
+.btn:hover {
+    background-color: #156875;
+    transform: scale(1.05);
+}
+
+/* Imagen del horario */
+.imghorarios {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mensaje de error */
+#errorMensaje {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+    display: none;
 }
 
 /**/

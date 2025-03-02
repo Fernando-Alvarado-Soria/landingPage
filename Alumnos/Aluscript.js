@@ -1,15 +1,20 @@
-// Obtener la lista de carreras
-const carreraList = document.getElementById("carreraList");
-
-// Agregar un controlador de eventos de clic a la lista de carreras
-carreraList.addEventListener("click", (e) => {
-    if (e.target.classList.contains("carrera-item")) {
-        // Si se hace clic en un elemento de carrera, alternar la visibilidad de las generaciones
-        const generaciones = e.target.querySelector(".generaciones");
-        if (generaciones.style.display === "none" || generaciones.style.display === "") {
-            generaciones.style.display = "block";
-        } else {
-            generaciones.style.display = "none";
-        }
-    }
-});
+function mostrarHorario(carrera, grado) {
+    const archivo = `Horarios/${carrera}/${grado}.jpg`;
+  
+    // Cargamos la imagen del horario
+    document.querySelector('#horarios img').src = archivo;
+    document.querySelector('#horarios img').style.display = 'block';
+  }
+  
+  // Cuando el usuario hace clic en el botón "Ver"
+  document.querySelector('#ver').addEventListener('click', function() {
+    // Obtenemos la carrera y el grado seleccionados
+    const carrera = document.querySelector('#carrera').value;
+    const grado = document.querySelector('#grado').value;
+  
+    mostrarHorario(carrera, grado);
+  });
+    // Función para ocultar la imagen
+    document.querySelector("#ocultar").addEventListener("click", function() {
+    document.querySelector("#horarios img").style.display = "none";
+    });
